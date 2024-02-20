@@ -26,8 +26,8 @@ This repository provides a structured and well-documented foundation for impleme
 
 To install the Passport Authentication Repository, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/passport-authentication-repo.git`
-2. Change into the project directory: `cd passport-authentication-repo`
+1. Clone the repository: `git clone https://github.com/kunaldhongade/PassportAuth-repo.git`
+2. Change into the project directory: `cd PassportAuth`
 3. Install dependencies: `npm install`
 
 ## Configuration
