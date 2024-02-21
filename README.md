@@ -298,4 +298,4 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 
 ---
 
-Thank you for choosing the Passport Authentication Repository! We hope this comprehensive guide helps you integrate secure authentication into your Node.js web applications effortlessly. If you have any questions or need further assistance, please don't hesitate to reach out to our community or open an issue on the repository. Happy coding!
+Thank you for choosing the Passport Authentication Repository! We hope this comprehensive guide helps you integrate secure authentication into your Node.js web applications effortlessly. If you have any questions or need further assistance, please don't hesitate to reach out to our community or open an issue on the repository. Happy coding :)!
