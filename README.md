@@ -296,7 +296,7 @@ We welcome contributions to improve this repository! Feel free to open issues fo
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/kunaldhongade/PassportAuth/blob/main/.github/LICENSE) file for details.
 
 ---
 
