@@ -239,9 +239,7 @@ To use OpenID Connect with Passport:
    npm install passport-openidconnect
    ```
 
-2. \*\*Configure Passport
-
-:\*\*
+2. **Configure Passport**
 
 ```javascript
 const passport = require("passport");
