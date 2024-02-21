@@ -239,33 +239,33 @@ To use OpenID Connect with Passport:
    npm install passport-openidconnect
    ```
 
-2. **Configure Passport
+2. \*\*Configure Passport
 
-:**
+:\*\*
 
-   ```javascript
-   const passport = require("passport");
-   const OpenIDConnectStrategy = require("passport-openidconnect").Strategy;
+```javascript
+const passport = require("passport");
+const OpenIDConnectStrategy = require("passport-openidconnect").Strategy;
 
-   passport.use(
-     new OpenIDConnectStrategy(
-       {
-         issuer: process.env.OIDC_ISSUER,
-         authorizationURL: process.env.OIDC_AUTHORIZATION_URL,
-         tokenURL: process.env.OIDC_TOKEN_URL,
-         clientID: process.env.OIDC_CLIENT_ID,
-         clientSecret: process.env.OIDC_CLIENT_SECRET,
-         callbackURL: process.env.OIDC_CALLBACK_URL,
-         userInfoURL: process.env.OIDC_USER_INFO_URL,
-       },
-       (issuer, sub, profile, accessToken, refreshToken, done) => {
-         // Handle user authentication and retrieval here
-         // Profile object contains user information
-         return done(null, profile);
-       }
-     )
-   );
-   ```
+passport.use(
+  new OpenIDConnectStrategy(
+    {
+      issuer: process.env.OIDC_ISSUER,
+      authorizationURL: process.env.OIDC_AUTHORIZATION_URL,
+      tokenURL: process.env.OIDC_TOKEN_URL,
+      clientID: process.env.OIDC_CLIENT_ID,
+      clientSecret: process.env.OIDC_CLIENT_SECRET,
+      callbackURL: process.env.OIDC_CALLBACK_URL,
+      userInfoURL: process.env.OIDC_USER_INFO_URL,
+    },
+    (issuer, sub, profile, accessToken, refreshToken, done) => {
+      // Handle user authentication and retrieval here
+      // Profile object contains user information
+      return done(null, profile);
+    }
+  )
+);
+```
 
 3. **Integrate OIDC Strategy in Your Routes:**
 
