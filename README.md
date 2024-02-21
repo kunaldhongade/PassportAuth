@@ -11,6 +11,9 @@ Welcome to the Passport Authentication Repository! This repository is designed t
 3. [Configuration](#configuration)
 4. [Usage](#usage)
 5. [Strategies](#strategies)
+   - [Google OAuth Strategy](#google-oauth-strategy)
+   - [GitHub OAuth Strategy](#github-oauth-strategy)
+   - [OpenID Connect Strategy](#openid-connect-strategy)
 6. [Customization](#customization)
 7. [Security Considerations](#security-considerations)
 8. [Contributing](#contributing)
@@ -93,10 +96,6 @@ Passport supports a variety of authentication strategies, including:
 - JWT Strategy
 
 Choose the strategies that best suit your application's requirements and configure them in the `passport-config.js` file.
-
-# Passport Authentication Repository - OAuth and OpenID Strategies
-
-In this section, we will delve into the OAuth strategies for Google and GitHub, as well as the OpenID Connect strategy. Understanding these authentication strategies is crucial for integrating third-party authentication providers into your web applications using Passport.
 
 ## Google OAuth Strategy
 
@@ -240,7 +239,9 @@ To use OpenID Connect with Passport:
    npm install passport-openidconnect
    ```
 
-2. **Configure Passport:**
+2. **Configure Passport
+
+:**
 
    ```javascript
    const passport = require("passport");
@@ -280,10 +281,6 @@ To use OpenID Connect with Passport:
      }
    );
    ```
-
-## Conclusion
-
-Integrating OAuth and OpenID Connect strategies with Passport enhances the authentication capabilities of your application, providing a seamless experience for users who prefer using their existing Google, GitHub, or other third-party credentials. Adapt the configurations based on your application's requirements, and ensure that your application securely handles user data and adheres to best practices for authentication and authorization.
 
 ## Customization
 
