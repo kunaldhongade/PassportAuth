@@ -1,5 +1,3 @@
-sdlfk
-
 # Passport Authentication :rocket:
 
 ## Introduction
