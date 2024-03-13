@@ -4,3 +4,5 @@ module.exports.isAuth = (req, res, next) => {
   }
   res.redirect("/login");
 };
+
+module.exports.isAdmin = () => {};
