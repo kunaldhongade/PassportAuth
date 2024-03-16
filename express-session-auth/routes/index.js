@@ -60,7 +60,7 @@ router.get("/login", (req, res, next) => {
     '<h1>Login Page</h1><form method="POST" action="/login">\
     Enter Username:<br><input type="text" name="username">\
     <br>Enter Password:<br><input type="password" name="password">\
-    <br><br><input type="submit" value="Submit"></form>';
+    <br><br><input type="submit" value="Submit"></form> <a href="/register">register</a>';
 
   res.send(form);
 });
@@ -71,7 +71,7 @@ router.get("/register", (req, res, next) => {
     '<h1>Register Page</h1><form method="post" action="register">\
                     Enter Username:<br><input type="text" name="username">\
                     <br>Enter Password:<br><input type="password" name="password">\
-                    <br><br><input type="submit" value="Submit"></form>';
+                    <br><br><input type="submit" value="Submit"></form><p>Please <a href="/login">login</a></p>';
 
   res.send(form);
 });
