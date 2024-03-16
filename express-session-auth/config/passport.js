@@ -1,7 +1,7 @@
 const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
 const connection = require("./database");
-const User = require("../models/User");
+const { User } = require("../models/User");
 const validPassword = require("../lib/passwordUtils").validPassword;
 
 const customFields = {
@@ -9,8 +9,8 @@ const customFields = {
   passwordField: "password",
 };
 
-const verifyCallback = (username, password, done) => {
-  User.findOne({ username: username })
+const verifyCallback = async (username, password, done) => {
+  await User.findOne({ username: username })
     .then((user) => {
       if (!user) {
         return done(null, false);
