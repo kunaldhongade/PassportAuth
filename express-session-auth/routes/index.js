@@ -2,7 +2,7 @@ const router = require("express").Router();
 const passport = require("passport");
 const genPassword = require("../lib/passwordUtils").genPassword;
 const connection = require("../config/database");
-const User = require("../models/User");
+const { User } = require("../models/User");
 
 /**
  * -------------- POST ROUTES ----------------
@@ -16,14 +16,17 @@ router.post(
   })
 );
 
-router.post("/register", (req, res, next) => {
+router.post("/register", async (req, res, next) => {
   const saltHash = genPassword(req.body.password);
 
   const salt = saltHash.salt;
   const hash = saltHash.hash;
 
-  if (User.findOne(req.body.username)) {
-    return res.send("User already exists");
+  const user = await User.findOne({ username: req.body.username });
+  console.log(user);
+
+  if (user) {
+    return res.status(400).send("user already Exists");
   }
 
   const newUser = new User({
