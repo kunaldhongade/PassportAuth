@@ -64,7 +64,6 @@ app.use((req, res, next) => {
   console.log("req.user", req.user);
   next();
 });
-
 /**
  * -------------- ROUTES ----------------
  */
